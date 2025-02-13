@@ -29,9 +29,12 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 import com.example.myapplication.R
+import com.example.myapplication.domain.repository.ContactRepo
 
 @Composable
-fun Home(modifier: Modifier = Modifier) {
+fun Home(
+    modifier: Modifier = Modifier,
+) {
 
     val showDialog = remember { mutableStateOf(false) }
     val isEditContact = remember { mutableStateOf(false) }
